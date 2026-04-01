@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Untuk Kamu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Efek Salju -->
+    <div id="snowflakes"></div>
+
+    <!-- Modal Foto -->
+    <div class="modal-overlay" id="photoModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-emoji" id="modalEmoji"></div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-description" id="modalShortDesc"></p>
+            <p class="modal-description" id="modalLongDesc"></p>
+            <p class="modal-date" id="modalDate"></p>
+        </div>
+    </div>
+
+    <!-- Container Utama -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🎂 Happy Birthday 🎂</h1>
+            <p>Untuk seseorang yang akan selalu berkesan di hati</p>
+        </div>
+
+        <!-- Konten -->
+        <div class="content">
+            <!-- Pesan Pembuka -->
+            <div class="message">
+                <h2>Selamat Ulang Tahun</h2>
+                <p>
+                    Hari spesial ini datang kembali, dan meski segala telah berubah, 
+                    aku ingin mengucapkan bahwa momen bersama kamu adalah hadiah terindah dalam hidupku.
+                    Terima kasih telah menjadi bagian dari cerita hidupku.
+                </p>
+            </div>
+
+            <!-- Gallery Foto Kenangan -->
+            <div class="gallery-section">
+                <h3>✨ Kenangan Indah ✨</h3>
+                <div class="gallery">
+                    <div class="photo-card" onclick="openModal('📷', 'kamu inget foto ini nggak', 'Sore yang paling menyenangkan, karena malihat tawa mu yang paling indah. Di mana pertama kali kita foto bareng, dan juga berkenalan dengan adek adek kls yang sekarang menjadi adik tanpa kk kita. di setiap frame pasti meninggalkan cerita di hati.', '2021')">
+                        <div class="photo-placeholder">
+                            <img src="gambar/foto di jutek .jpeg" alt="kamu inget foto ini nggak">
+                        </div>
+                        <div class="photo-caption">kamu inget foto ini nggak</div>
+                    </div>
+                    <div class="photo-card" onclick="openModal('🌅', 'kamu inget nyamperin aku di booth kerjaan nggak', 'saat itu aku nggak tau kamu bakal kesini. kamu kan hanya ngomong *mas aku meh dolan yoo*. ehh ternyata ituu menjadi hari yang paling bersemangat untuk berkerja.Terimaksih ya.', '2022')">
+                        <div class="photo-placeholder">
+                            <img src="gambar/javanese.jpeg" alt="hari yang paling semangat">
+                        </div>
+                        <div class="photo-caption">hari yang paling semangat</div>
+                    </div>
+                    <div class="photo-card" onclick="openModal('🎂', 'Perayaan ulang tahun pertama', 'Ulang tahunmu yang pertama bersama aku. pada saat itu aku belum bisa ngasi apa-apa,hanya sekedar tangkai bunga palsu yang ada di tangan mu dan kesederhanaann pakaian ku, itu sebagai momen yang paling berkesan. moment ini insya allah selamanya tersimpan di ingatan ku .', '2022')">
+                        <div class="photo-placeholder">
+                            <img src="gambar/ulang tahun mu yang sederhana.jpeg" alt="Ulang Tahun">
+                        </div>
+                        <div class="photo-caption">Perayaan ulang tahun pertama</div>
+                    </div>
+                    <div class="photo-card" onclick="openModal('🌹', 'moment ketika aku kaget di beliin kemeja kamu', 'kegiatan ini aku seneng banget karena aku bisa selalu ada pas kamu butuh kan, kan akku seneng sekali kita bisa berkegiatan bareng aku pengen sekali seperti ini lagi.', 'Musim Dingin 2022')">
+                        <div class="photo-placeholder">
+                            <img src="gambar/batik couple 1.jpeg" alt="Momen Romantis">
+                        </div>
+                        <div class="photo-caption">Momen romantis yang tak terlupakan</div>
+                    </div>
+                    <div class="photo-card" onclick="openModal('🎭', 'Gelak tawa di bioskop', 'Film apa yang kita  tonton pada saat itu? Aku tidak ingat. Yang aku ingat hanya tanganmu di tanganku, dan tawa kita yang mengisi bioskop itu.', '2022')">
+                        <div class="photo-placeholder">
+                            <img src="gambar/boiskop.jpeg" alt="Di Bioskop">
+                        </div>
+                        <div class="photo-caption">Gelak tawa di bioskop</div>
+                    </div>
+                    <div class="photo-card" onclick="openModal('💫', 'puasa pertama bareng kamu', 'kita bikin konten bareng. buat foto foto masih ada rasa canggung,Di malam itu aku tahu tahu dan aku mikir apakah aku pantas bareng bersama muu.','cinta semacam ini hanya sekali seumur hidup', '2021')">
+                        <div class="photo-placeholder">
+                            <img src="gambar/fotbar bikin konten kembang api 1.jpeg" alt="Malam Bintang">
+                        </div>
+                        <div class="photo-caption">Bintang di tengah malam kami</div>
+                    </div>
+                    <div class="photo-card" onclick="openModal('💫', 'kita berhasil bikin iri semua orang', 'aku inget banget aku' , 'aku pada sat itu aku masih banyak acara tapi kamu paska akhir nya aku tetep ikut dengan kamu. kapan kapan kita ulang yokk','cinta semacam ini hanya sekali seumur hidup', '2022')">
+                        <div class="photo-placeholder">
+                            <img src="gambar/foto bareng lk 1.jpeg" alt="Malam Bintang">
+                        </div>
+                        <div class="photo-caption">foto yang paling aku suka</div>"
+                    </div>
+                    <div class="photo-card" onclick="openModal('💫', 'dan aku tidak menyangka ini adalah foto terakhir', 'foto ini mungkin terakhiir kita merefresh sebuah hubungan dan akhir perjalanan cinta' ,'aku percaya jika jodoh tak kan kemana','Happy Birthday ya SITI ANDRIANIS ', ' 2022')">
+                        <div class="photo-placeholder">
+                            <img src="gambar/foto bareng lk 2.jpeg" alt="Malam Bintang">
+                        </div>
+                        <div class="photo-caption">aku blm percaya</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Kenangan -->
+            <div class="gallery-section">
+                <h3>📖 Cerita Kita 📖</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Pertemuan Pertama</h4>
+                        <p>Pada saat itu aku ingin sekali kita berteman, namun kok aku memendam rasa begiitu dalann dan nyaman, akku juga berfikir mungkin ini cewek yang bisa merubah ku..</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Petualangan Bersama</h4>
+                        <p>Setiap perjalanan dengan kamu adalah petualangan. Kita tertawa, berbagi cerita, dan membuat kenangan yang akan selamanya bertahan.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Momen Kebersamaan</h4>
+                        <p>Dalam keheningan atau keramaian, bersama kamu terasa seperti rumah. Setiap detik bernilai lebih karena ada kamu.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Cinta Sejati</h4>
+                        <p>Meskipun jalan kita terpisah, hati ini masih mengucapkan terima kasih. Kamu adalah guru cinta terbaikku.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pesan Harapan -->
+            <div class="wishes">
+                <h3>💝 Doa dan Harapan 💝</h3>
+                <p>
+                    Happy Birthday sayang, aku tau kita bukan siapa siapa lagi aku, belum bisa ngasi apa apa untuk mu aku ingin sekali mengulang rasa itu kembali
+                    namun aku mikir ini udh jadi bubur,dan mungkin kita bisa berteman tanpa ada rasa canggung di di dalam nya. 
+                <p>
+                    Selamat ulang tahun SITI ANDRIANIS semoga cita cita nya tercapai, 
+                    Mas pengen kamu itu sukses dunia dan akhirat. semoga doa da kamu cepat di kabulkan oleh allah yaa 
+                    wish you all the best.
+                    Selamat ulang tahun kamu yang masih ada kok sisa di hati ku 
+                    Anjayy aku alay  poll jijik lohh. 
+                </p>
+                <div class="hearts">💕 💕 💕</div>
+            </div>
+
+            <!-- Section Komentar -->
+            <div class="input-section">
+                <h3 style="color: #667eea; margin-bottom: 20px;">Tinggalkan Pesan Spesial 💌</h3>
+                <input type="text" id="messageInput" placeholder="Tulis pesan terbaik kamu di sini...">
+                <button onclick="addMessage()">Kirim</button>
+            </div>
+
+            <div class="comments-section" id="commentsContainer"></div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Dibuat dengan sepenuh hati untuk orang yang istimewa ❤️</p>
+            <p>Semoga kebahagiaan selalu menemani setiap langkahmu</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
